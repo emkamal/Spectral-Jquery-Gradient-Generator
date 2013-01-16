@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Spectral Jquery Gradient Generator</title>
+		<script type="text/javascript" src="dependencies/jquery/jquery-1.7.2.min.js"></script>
+		
+		<link type="text/css" href="dependencies/jqueryui/css/black-tie/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="dependencies/jqueryui/jquery-ui-1.8.21.custom.min.js"></script>
+		
+		<link rel="stylesheet" href="dependencies/colorpicker/css/colorpicker.css" type="text/css" />
+		<script type="text/javascript" src="dependencies/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="dependencies/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="dependencies/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="dependencies/colorpicker/js/layout.js?ver=1.0.2"></script>
+		
+		<link type="text/css" rel="stylesheet" href="spectralGradientGenerator.css" />
+		<script type="text/javascript" src="spectralGradientGenerator.min.js"></script>
+
+		<link type="text/css" rel="stylesheet" href="demo.css" />
+	</head>
+	<body>
+		
+		<div id="spectrumbox"></div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<textarea id="cssTextArea"></textarea>
+		
+		<script>
+			jQuery(document).ready(function($){
+				$("#spectrumbox").spectralGradientGenerator({
+					gradientBoxWidth: 500,
+					gradientBoxHeight: 30,
+					targetTextArea: "cssTextArea",
+					includePie: true
+				});
+			});
+		</script>
+
+	</body>
+</html>
+
+

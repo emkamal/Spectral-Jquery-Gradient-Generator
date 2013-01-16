@@ -1,0 +1,199 @@
+
+
+#spectral-cssplaceholder {
+    display: none;
+}
+
+.spectral {
+    font-family: arial;
+    font-size: 9px;
+}
+
+.spectral .spectrumbox-gradient {
+    position: absolute;
+    top: 0pt;
+    bottom: 0pt;
+    left: 0pt;
+    right: 0pt;
+}
+
+.spectral ul, .spectral li {
+    list-style: none outside none;
+    padding: 0pt;
+    margin: 0pt;
+}
+
+.spectral .gradient-stop-control-area {
+    position: absolute;
+    bottom: 0pt;
+    left: -12px;
+}
+
+.spectral .gradient-stop {
+    position: absolute ! important;
+    width: 24px;
+    height: 54px;
+    background: none repeat scroll 0% 0% #777777;
+    cursor: w-resize;
+    border: 1px solid #777777;
+    border-radius: 0pt 0pt 3px 3px;
+    box-shadow: 0pt 2px 2px #777777;
+}
+
+.spectral .gradient-stop-2 {
+    right: 0pt;
+}
+
+.spectral .gradient-stop-2 .gradient-stop-color {
+    background-color: #FAD160;
+}
+
+.spectral .gradient-stop:hover, .spectral .gradient-stop.ui-draggable-dragging {
+    background: none repeat scroll 0% 0% #555555;
+    border: 1px solid #555555;
+    z-index: 250;
+}
+
+.spectral .gradient-stop.ui-draggable-dragging {
+    top: -3px;
+    z-index: 101;
+}
+
+.spectral .gradient-stop:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -1px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0pt 13px 10px;
+    border-color: transparent transparent #777777;
+}
+
+.spectral .gradient-stop:hover:before, .spectral .gradient-stop.ui-draggable-dragging:before {
+    border-color: transparent transparent #555555;
+}
+
+.spectral .gradient-stop-color {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    margin: 3px;
+    background: none repeat scroll 0% 0% #FFFFFF;
+    border: 1px solid #555555;
+    cursor: pointer;
+}
+
+.spectral .gradient-stop-color:hover {
+    border-color: #333333;
+    box-shadow: 0pt 0pt 3px #000000;
+}
+
+.spectral .gradient-stop-pos {
+    display: block;
+    margin: 0pt 3px 3px;
+    width: 16px;
+    height: 13px;
+    border: 1px solid #555555;
+    background: none repeat scroll 0% 0% #FFFFFF;
+    cursor: pointer;
+}
+
+.spectral .gradient-stop-pos:hover {
+    background: none repeat scroll 0% 0% #CCCCCC;
+}
+
+.spectral .gradient-stop-icon {
+    background-color: #555555;
+    border-radius: 0pt 0pt 3px 3px;
+    color: #AAAAAA;
+    height: 12px;
+    margin: 0pt;
+    width: 24px;
+}
+
+.spectral .gradient-stop-icon.ui-icon-triangle-2-e-w {
+    background-position: -140px -18px;
+}
+
+.spectral .gradient-stop-pos-form {
+    display: none;
+    background: none repeat scroll 0% 0% #AAAAAA;
+    left: 30px;
+    padding: 5px;
+    position: absolute;
+    top: 16px;
+    width: 140px;
+    border-radius: 0pt 3px 3px 0pt;
+    box-shadow: 2px 0pt 3px #CCCCCC;
+    z-index: 100;
+}
+
+.spectral .gradient-stop-pos-form input[type="text"] {
+    border: 1px solid #555555;
+    width: 30px;
+    box-shadow: 1px 1px 2px #CCCCCC inset;
+}
+
+.spectral .gradient-stop-pos-form .gobutton {
+    background: none repeat scroll 0pt 0pt #777777;
+    border: 1px solid #555555;
+    box-shadow: 0pt 1px 0pt #999999 inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 10px;
+    text-shadow: 0pt -1px 0pt #333333;
+    position: relative;
+    padding: 1px 20px 2px 5px;
+    top: -2px;
+    left: -10px;
+    margin: 0pt 0pt 0pt 12px;
+}
+
+.spectral .gradient-stop-pos-form .gobutton span {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.spectral .gradient-stop-pos-form .gobutton:hover {
+    background-color: #999999;
+    border: 1px solid #777777;
+    box-shadow: 0pt 1px 0pt #AAAAAA inset;
+    color: #000000;
+    text-shadow: 0pt 1px 1px #555555;
+}
+
+.spectral .gradient-stop-pos-form .closebutton {
+    color: maroon;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+}
+
+.spectral .gradient-stop-pos-form .closebutton:hover {
+    text-shadow: 0pt 0pt 5px red;
+}
+
+.spectral .gradient-stop-pos-form:before {
+    content: "Move to: ";
+}
+
+.spectral .gradient-stop-pos-form:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 10px 15px 0pt;
+    border-color: transparent #AAAAAA transparent transparent;
+}
